@@ -1,0 +1,386 @@
+<html>
+
+<head>
+<h1>Welcome To The Ball Effect!!!</h1>
+<style>
+body {
+    background-image: url("data:image/jpeg;base64,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");
+    background-color: #cccccc;
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+} 
+h1 {
+   color: orange;
+   text-align: center;
+   text-shadow: 5px 5px 5px #FF0000;
+}
+p.pos_fixed {
+    position: fixed;
+    top: 650;
+    right: 500;
+    color: red;
+}
+g {
+  color: red;
+  text-shadow: 5px 5px 5px #FF0000;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+   display: vertical-align;
+}
+lb {
+    display: block;
+    width: 70px;
+}
+h2{
+    position: absolute;
+    left: 545px;
+    top: 50px;
+}
+sj {
+   position: absolute;
+   left: 590px;
+   top: 100px;
+}
+c {
+  text-shadow
+}
+t {
+    font-family: "Times New Roman", Times, serif;
+}
+div  {
+    width: 360px;
+    height: 360px;
+    background: green;
+    -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+    animation: myfirst 5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    from {background: black;}
+    to {background: pink;}
+	from {background: red;}
+    to {background: yellow;}
+	from {background: red;}
+    to {background: blue;}
+	from {background: red;}
+    to {background: yellow;}
+	from {background: red;}
+    to {background: yellow;}
+	from {background: green;}
+    to {background: red;}
+	from {background: red;}
+    to {background: black;}
+	   from {background: red;}
+    to {background: yellow;}
+	   from {background: red;}
+    to {background: pink;}
+
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    from {background: red;}
+    to {background: black;}
+	   from {background: red;}
+    to {background: yellow;}
+	   from {background: red;}
+    to {background: black;}
+}
+
+</style>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+
+</script>
+<script>
+function moveup() {
+redball.top= redball.top -5;
+}
+</script>
+<script>
+function movedown() {
+redball.top= redball.top +5;
+}
+</script>
+<script>
+function moveleft() {
+redball.left= redball.left -5;
+}
+</script>
+<script>
+function moveright() {
+redball.left= redball.left +5;
+}
+</script>
+<script>
+function movesquare() {
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+}
+
+function movediagonalright() {
+moveright();
+moveup();
+}
+function movedownright() {
+moveright();
+movedown();
+}
+function movedownleft() {
+moveleft();
+movedown();
+}
+function moveupleft () {
+moveleft();
+moveup();
+}
+
+function center() {
+redball.left= 650;
+redball.top= 500;
+}
+function triangle() {
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+}
+function octagon() {
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+}
+</script>
+</head>
+<body>
+
+
+<img src="rdball.jpg" id="redball" alt="Redball" Height="45" width="45" style="absolute; left: 650px; top: 500px;">
+
+<ul>
+<li><lb>
+ <button onclick="moveup()" autofocus><t>Move Up!</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="movedown()" autofocus><t>Move Down!</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="moveright()" autofocus><t>Move Right!</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="moveleft()" autofocus><t>Move Left!</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="center()" autofocus><t>Center Me!</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="movesquare()" autofocus><t>Move Square!</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="triangle()" autofocus><t>Move Triangle!</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="octagon()" autofocus><t>Move in Octagon!</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="movediagonalright()" autofocus><t>Move Up Right!</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="movedownright()" autofocus><t>Move Down Right</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="moveupleft()" autofocus><t>Move Up Left!</t></button>
+ </li></lb>
+ <li><lb>
+ <button onclick="movedownleft()" autofocus><t>Move Down Left!</t></button>
+ </li></lb>
+ 
+</ul>
+<h2>
+<div><g>Innovative Developers</g></div>
+</h2>
+
+</body>
+
+</html>

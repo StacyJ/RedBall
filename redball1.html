@@ -1,0 +1,69 @@
+<html>
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+
+<script>
+function moveup() {
+redball.top= redball.top -5;
+}
+</script>
+<script>
+function movedown() {
+redball.top= redball.top +5;
+}
+</script>
+<script>
+function moveleft() {
+redball.left= redball.left -5;
+}
+</script>
+<script>
+function moveright() {
+redball.left= redball.left +5;
+}
+</script>
+<script>
+function movesquare() {
+redball.top= redball.top -15;
+redball.top= redball.top -15;
+redball.top= redball.top -15;
+redball.top= redball.top -15;
+redball.top= redball.top -15;
+redball.top= redball.top -15;
+redball.left= redball.left +15;
+redball.left= redball.left +15;
+redball.left= redball.left +15;
+redball.left= redball.left +15;
+redball.left= redball.left +15;
+redball.left= redball.left +15;
+redball.top= redball.top +15;
+redball.top= redball.top +15;
+redball.top= redball.top +15;
+redball.top= redball.top +15;
+redball.top= redball.top +15;
+redball.top= redball.top +15;
+redball.left= redball.left -15;
+redball.left= redball.left -15;
+redball.left= redball.left -15;
+redball.left= redball.left -15;
+redball.left= redball.left -15;
+redball.left= redball.left -15;
+}
+</script>
+<script>
+function movediagonal() {
+redball.left= redball.left +5;
+redball.top= redball.top -5;
+}
+</script>
+</head>
+<body>
+<img src="rdball.jpg" id="redball" alt="Redball" Height="500" width="700" >
+ <button onclick="moveup()">Move Up!</button> 
+ <button onclick="movedown()">Move Down!</button>
+ <button onclick="moveright()">Move Right!</button>
+ <button onclick="moveleft()">Move Left!</button>
+ <button onclick="movesquare()">Move Square!</button>
+ <button onclick="movediagonal()">Move Diagonal!</button>
+</body>
+</html>

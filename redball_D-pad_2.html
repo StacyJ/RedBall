@@ -1,0 +1,434 @@
+<html>
+
+<head>
+<h1>Welcome To The Ball Effect!!!</h1>
+
+<link type="text/css" rel="stylesheet" href="try1.css"/>
+<style>
+
+</style>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+
+</script>
+<script>
+function moveup() {
+	var pnu=redball.top -5;
+	if (pnu>0) {
+redball.top= redball.top -5;}
+}
+</script>
+<script>
+function movedown() {
+	var nextmovedown=redball.top +5;
+	if (nextmovedown<740) {
+redball.top= redball.top +5;}
+}
+</script>
+<script>
+function moveleft() {
+	var pns=redball.left -5;
+	if (pns>0)  {
+	redball.left= redball.left -5;
+	}
+	
+}
+</script>
+<script>
+function moveright() {
+	var nextrightmove=redball.left +5;
+	if (nextrightmove<1305) {
+redball.left= redball.left +5;}
+}
+function moveup10() {
+	for(var i=1; i<=10; i++){
+	moveup();
+	}
+}
+</script>
+<script>
+function movesquare() {
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+}
+
+function movediagonalright() {
+moveright();
+moveup();
+}
+function movedownright() {
+moveright();
+movedown();
+}
+function movedownleft() {
+moveleft();
+movedown();
+}
+function moveupleft () {
+moveleft();
+moveup();
+}
+
+function center() {
+redball.left= 710;
+redball.top= 425;
+}
+function triangle() {
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+}
+function octagon() {
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+moveright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveupleft();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+movediagonalright();
+}
+
+function movex () {
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+moveupleft()
+moveupleft()
+moveupleft()
+moveupleft()
+moveupleft()
+moveupleft()
+moveupleft()
+moveupleft()
+movedownleft()
+movedownleft()
+movedownleft()
+movedownleft()
+movedownleft()
+movedownleft()
+movedownleft()
+movedownleft()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movediagonalright()
+movedownleft()
+movedownleft()
+movedownleft()
+movedownleft()
+movedownleft()
+movedownleft()
+movedownleft()
+movedownleft()
+moveupleft()
+moveupleft()
+moveupleft()
+moveupleft()
+moveupleft()
+moveupleft()
+moveupleft()
+moveupleft()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+movedownright()
+}
+
+</script>
+</head>
+<body>
+
+
+<img src="rdball.jpg" id="redball" alt="Redball" Height="45" width="45" position="left: 650px; top: 500px;">
+	
+		<table border="2px">
+			<tr>
+				<td>
+						<button onclick="moveupleft()">
+					<img src="upleft.jpg" height="45" width="45"></button>
+				</td>
+				<td>
+						<button onclick="moveup()">
+					<img src="up.jpg" height="45" width="45"></button>
+				</td>
+				<td>
+						<button onclick="movediagonalright()">
+					<img src="upright.jpg" height="45" width="45"></button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+						<button onclick="moveleft()">
+				<img src="left.jpg" height="45" width="45"></button>
+				</td>
+				<td>
+				<a href="http://www.amultiservice.com">
+				<img style src="sj.jpg" height="50" width="60"></a>
+				</td>
+				<td>
+						<button onclick="moveright()">
+				<img src="right.jpg" height="45" width="45"></button>
+			</tr>
+			<tr>
+				<td>
+						<button onclick="movedownleft()">
+				<img src="downleft.jpg" height="45" width="45"></button>
+				</td>
+				<td>
+						<button onclick="movedown()">
+				<img src="down.jpg" height="45" width="45"></button>
+				</td>
+				<td>
+						<button onclick="movedownright()">
+				<img src="downright.jpg" height="45" width="45"></button>
+		</table>
+
+<ul>
+	<lb>
+	<li>
+	<button onclick="moveup()" autofocus><t>Move Up!</t></button>
+	</li>
+	<li>
+	<button onclick="movedown()" autofocus><t>Move Down!</t></button>
+	</li>
+	<li>
+	<button onclick="moveright()" autofocus><t>Move Right!</t></button>
+	</li>
+	<li>
+	<button onclick="moveleft()" autofocus><t>Move Left!</t></button>
+	</li>
+	<li>
+	<button onclick="center()" autofocus><t>Center Me!</t></button>
+	</li>
+	<li>
+	<button onclick="movesquare()" autofocus><t>Move Square!</t></button>
+	</li>
+	<li>
+	<button onclick="triangle()" autofocus><t>Move Triangle!</t></button>
+	</li>
+	<li>
+	<button onclick="octagon()" autofocus><t>Move in Octagon!</t></button>
+	</li>
+	<li>
+	<button onclick="movediagonalright()" autofocus><t>Move Up Right!</t></button>
+	</li>
+	<li>
+	<button onclick="movedownright()" autofocus><t>Move Down Right</t></button>
+	</li>
+	<li>
+	<button onclick="moveupleft()" autofocus><t>Move Up Left!</t></button>
+	</li>
+	<li>
+	<button onclick="movedownleft()" autofocus><t>Move Down Left!</t></button>
+	</li>
+	<li>
+	<button onclick="moveup10()" autofocus><t>Move Up 2x</t></button>
+	</li>
+	<li>
+	<button onclick="movex()" autofocus><t>Move in X</t></button>
+	
+	</lb>
+ 
+</ul>
+<h2>
+<div><g>Innovative Developers</g>
+
+</div>
+</h2>
+
+</body>
+
+</html>
